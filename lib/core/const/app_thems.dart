@@ -38,9 +38,9 @@ class AppThemes {
       fontFamily: 'PlayfairDisplay',
       textTheme: const TextTheme(
         titleSmall: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.w600,
-          color: AppColors.colorTextSubTitle,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+          color: AppColors.black,
         ),
         titleMedium: TextStyle(
           fontSize: 23,
@@ -65,7 +65,7 @@ class AppThemes {
             color: AppColors.background,
             fontWeight: FontWeight.w700),
       ),
-      primarySwatch: Colors.blue,
+      primarySwatch: Colors.deepPurple,
       cardTheme: const CardTheme(color: AppColors.black),
       scaffoldBackgroundColor: AppColors.black);
   static final ThemeData themeEnglish = ThemeData(
@@ -93,9 +93,9 @@ class AppThemes {
     fontFamily: 'PlayfairDisplay',
     textTheme: const TextTheme(
       titleSmall: TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.w600,
-        color: AppColors.colorTextSubTitle,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+        color: AppColors.black,
       ),
       titleMedium: TextStyle(
         fontSize: 23,
