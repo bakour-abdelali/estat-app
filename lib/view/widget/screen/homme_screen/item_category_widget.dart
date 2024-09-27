@@ -1,11 +1,15 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:estat_app/core/const/app_links.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../../core/const/app_colors.dart';
+import '../../../../core/shard/custem_image_networek.dart';
+import '../../../../data/modle/category_modle.dart';
 
 class ItemCategoryWidget extends StatelessWidget {
   final void Function()? onTap;
-  const ItemCategoryWidget({super.key, this.onTap});
+  final CategoryModle modle;
+  const ItemCategoryWidget({super.key, this.onTap, required this.modle});
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +31,8 @@ class ItemCategoryWidget extends StatelessWidget {
             // color: Colors.red,
             borderRadius: BorderRadius.circular(20),
           ),
-          child: CachedNetworkImage(
-            imageUrl:
-                "https://i0.wp.com/static.vecteezy.com/system/resources/previews/008/326/114/non_2x/real-estate-building-logo-icon-design-free-vector.jpg?ssl=1",
+          child: CustemImageNetworek(
+            link: "${AppLinkes.imagesServis}/${modle.categoryImage!}",
           ),
         ),
       ),

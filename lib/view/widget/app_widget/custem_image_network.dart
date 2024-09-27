@@ -48,7 +48,8 @@ class CustemImageNetwork extends StatelessWidget {
     return ClipRRect(
       borderRadius: borderRadius,
       child: CachedNetworkImage(
-        placeholder: (context, url) => const CircularProgressIndicator(),
+        placeholder: (context, url) =>
+            const Center(child: CircularProgressIndicator()),
         errorWidget: (context, url, error) => const Icon(Icons.error),
         fadeInDuration: const Duration(milliseconds: 500),
         fit: fit,

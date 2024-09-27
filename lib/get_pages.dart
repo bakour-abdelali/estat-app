@@ -5,6 +5,8 @@ import 'package:estat_app/view/screen/langege_screen.dart';
 import 'package:estat_app/view/screen/my_homme_screen.dart';
 import 'package:get/get.dart';
 
+import 'view/screen/category_screen.dart';
+
 List<GetPage<dynamic>>? getPages = [
   GetPage(
       name: "/",
@@ -21,5 +23,9 @@ List<GetPage<dynamic>>? getPages = [
   GetPage(
     name: AppRoutes.myHomeScreen,
     page: () => const MyHommeScreen(),
+  ),
+  GetPage(
+    name: AppRoutes.categoryScreen,
+    page: () => const CategoryScreen(),
   ),
 ];

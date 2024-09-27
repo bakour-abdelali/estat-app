@@ -15,9 +15,12 @@ class SectionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleSmall,
+        Flexible(
+          child: Text(
+            title,
+            style: Theme.of(context).textTheme.titleSmall,
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
         GestureDetector(
           onTap: onSeeAll,

@@ -54,12 +54,8 @@ class LoginControlerImp extends LoginControler {
 
       if (stateRaqust == StateRaqust.succes) {
         if (respons['status'] == 'success') {
-          print(respons['data']['user_certain']);
           String s = respons['data']['user_certain'].toString();
           if (s == '1') {
-            print("User is certain");
-            print(respons['data']);
-
             myServisess.sharedPreferences
                 .setString("user_lname", respons['data']['user_lname']);
 
